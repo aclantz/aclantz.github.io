@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Document</title>
-</head>
-<body>
-<p>
-My name is Alex Lantz and I own this domain. Contact me on
-<a href="mailto:alexclantz@gmail.com">alexclantz@gmail.com</a>
-</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex's Portfolio</title>
+    <link rel="shortcut icon" href="./img/favicon.lighthouse.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.production.css" type="text/css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <img
+        src="img/alex-logo.png"
+        alt="Alex's personal logo"
+        class="page-header__item" />
+      <nav class="page-header__item">
+        <ul role="menubar" class="nav--list border-anima">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="nav--list__item nav--list__item--active"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="nav--list__item hover"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="nav--list__item"
+              >My work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="nav--list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main__index">
+      <img
+        src="img/alex-acadia-profile.jpg"
+        class="profile__portrait"
+        alt="Photo of me in Acadia national park." />
+      <h1>Hello World</h1>
+      <p>My name is Alex, and I'm learning to be a web developer!</p>
+      <a href="work.html" class="hover">Check out some of my code</a><br />
+    </main>
+    <footer class="page__footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/aclantz"><img src="./img/github-icon.svg" alt="Github" /></a>
+        <a href="#"> <img src="./img/linkedin-icon.svg" alt="Linkedin" /></a>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>

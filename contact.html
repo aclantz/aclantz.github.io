@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Alex</title>
+    <link rel="shortcut icon" href="./img/favicon.lighthouse.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.production.css" type="text/css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <img
+        src="img/alex-logo.png"
+        alt="Alex's personal logo"
+        class="page-header__item" />
+      <nav class="page-header__item">
+        <ul role="menubar" class="nav--list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="nav--list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="nav--list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="nav--list__item"
+              >My work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="nav--list__item nav--list__item--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main__flex">
+      <h1>Contact me</h1>
+      <div>
+        <form action="#" method="post" class="contact-form">
+          <label for="form-email">Email</label>
+          <input type="email" id="form-email" required />
+          <label for="form-phone">Phone</label>
+          <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="form-phone" />
+          <label for="form-message">Message</label>
+          <textarea maxlength="240" required id="form-message"></textarea>
+          <input type="submit" value="submit message" class="button" />
+        </form>
+      </div>
+      <div class="email-div">
+        <p>Email:</p>
+        <a href="mailto:alexclantz@gmail.com">alexclantz@gmail.com</a>
+      </div>
+    </main>
+    <footer class="page__footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/aclantz"
+          ><img src="./img/github-icon.svg" alt="Github"
+        /></a>
+        <a href="#"> <img src="./img/linkedin-icon.svg" alt="Linkedin" /></a>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
