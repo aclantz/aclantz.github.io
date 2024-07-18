@@ -58,10 +58,10 @@ button, .button {
   }
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 600px;
   height: auto;
   margin-right: 40px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .page__footer {
   clear: both;
