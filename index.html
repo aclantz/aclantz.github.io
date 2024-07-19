@@ -12,7 +12,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.production.css" type="text/css" />
+    <link rel="stylesheet" href="./css/styles2.css" type="text/css" />
   </head>
   <body>
     <header class="page-header">
@@ -31,41 +31,197 @@
             >
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="nav--list__item hover"
+            <a href="#about" role="menuitem" class="nav--list__item hover"
               >About me</a
             >
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="nav--list__item"
+            <a href="#work" role="menuitem" class="nav--list__item"
               >My work</a
             >
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="nav--list__item"
+            <a href="#contact" role="menuitem" class="nav--list__item"
               >Contact</a
             >
           </li>
         </ul>
       </nav>
     </header>
-    <main class="">
-      <div class="main__index">
+    <main class="container">
+      <!-- Main, landing --------------------------------------- -->
+      <div class="main__index" id="main">
         <img
-        src="img/alex-acadia-profile.jpg"
-        class="profile__portrait"
-        alt="Photo of me in Acadia national park." />
-      <h1>Hello World</h1>
-      <p>My name is Alex, and I'm learning to be a web developer!</p>
-      <a href="work.html" class="hover">Check out some of my code</a><br />
+          src="img/alex-acadia-profile.jpg"
+          class="profile__portrait"
+          alt="Photo of me in Acadia national park." />
+        <div class="main__message">
+          <h1>Hello World</h1>
+          <p>My name is Alex Lantz, and I'm learning to be a web developer!</p>
+          <a href="work.html" class="hover">Check out some of my work</a><br />
+          <div class="main__social">
+            <a href="https://github.com/aclantz"
+              ><img src="./img/github-icon.svg" alt="Github"
+            /></a>
+            <a href="https://www.linkedin.com/in/alex-lantz-432182277/">
+              <img src="./img/linkedin-icon.svg" alt="Linkedin"
+            /></a>
+            <a href="https://x.com/LantzAlex" width="30px" height="auto"
+              ><img src="./img/x-icon.svg" alt="X, formally twitter"
+            /></a>
+            <a href="https://medium.com/@aclantz321" width="30px"
+              ><img src="./img/medium-icon.svg" alt="Medium"
+            /></a>
+          </div>
+        </div>
       </div>
-      
+      <!-- About ------------------------------------------------------ -->
+      <div class="about__index" id="about">
+        <h1>About Me</h1>
+        <div class="about__message">
+          <p>
+            I am a retired professional dancer turned web developer living in
+            Rhode Island. I am excited to keep creating in a virtual format and
+            to apply my dedication and drive to your project!
+          </p>
+        </div>
+        <div class="about__images">
+          <img src="./img/dance-tara.jpeg" alt="a picture of me dancing" />
+          <img src="./img/wedding-image.jpg" alt="wedding photo" />
+          <img src="./img/rainier-profile.jpeg" alt="" />
+        </div>
+      </div>
+      <!-- Work ------------------------------------------------------ -->
+      <div class="work__index" id="work">
+        <h1>My Work</h1>
+      <div class="grid work__cards">
+        <div class="grid__item">
+          <a href="./case-study/to-do-list-case-study.html"><h2>To Do List App</h2></a>
+          <a href="./case-study/to-do-list-case-study.html"><img
+            src="./img/toDoList-app.png"
+            alt="screen shot of To Do List application"
+            class="work-img"
+            width="300px" /></a>
+          
+          <p>
+            Created using JavaScript this App allows users to easily create,
+            organize, and manage a list of tasks on a digital platform. This was
+            my first app using javascript and jQuery.
+          </p>
+        </div>
+        <div class="grid__item">
+          <a href="./case-study/pokedex-case-study.html"><h2>PokeDex App</h2></a>
+          <a href="./case-study/pokedex-case-study.html"><img
+            src="./img/pokedex-app.png"
+            alt="screen shot of pokedex application"
+            class="work-img"
+            width="300px" /></a>
+          
+          <p>
+            JavaScript built application allowing users to explore data about
+            the original 150 pokemon. Using a pokemon API I built an app that
+            allows users to find information about any selected pokemon.
+          </p>
+        </div>
+        <div class="grid__item">
+          <a href="./case-study/myFlix-react-case-study.html"><h2>myFlix App, React</h2></a>
+          <a href="./case-study/myFlix-react-case-study.html"><img
+            src="./img/myflix-app.png"
+            alt="acreen shot of myFlix application"
+            class="work-img"
+            width="300px" /></a>
+          
+          
+          <p>
+            A React movie application that allows users to create profiles and
+            explore a database of movies. My first experience building a full
+            back and front end of an application using JavaScript, Node,
+            MongoDB, and React.
+          </p>
+        </div>
+        <div class="grid__item">
+          <a href="./case-study/meet-case-study.html"><h2>Meet App</h2></a>
+          <a href="./case-study/meet-case-study.html"><img
+            src="./img/meet-app.png"
+            alt="screen shot of meet application"
+            class="work-img"
+            width="300px" /></a>
+          
+          <p>
+            A React application giving users information about events in certain
+            cities. Allows users to search for cities and displays visual data
+            about what events are available and specifics about each event.
+          </p>
+        </div>
+        <div class="grid__item">
+          <a href="./case-study/chat-case-study.html"><h2>Chat App</h2></a>
+          <a href="./case-study/chat-case-study.html"><img
+            src="./img/chat-app.jpeg"
+            alt="screen shot of react native chat application"
+            class="work-img"
+            width="100px"
+            height="200px" /></a>
+          
+          <p>
+            Working with React Native and Gifted Chat I built a chat app that
+            allows users to communicate, see old messages, send pictures, and
+            share their location.
+          </p>
+          
+        </div>
+        <div class="grid__item">
+          <a href="./case-study/myFlix-angular-case-study.html"><h2>myFlix App, Angular</h2></a>
+          <a href="./case-study/myFlix-angular-case-study.html"><img
+            src="./img/angular-myflix-app.png"
+            alt="screen shot of angular application"
+            class="work-img"
+            width="300px" /></a>
+          
+          <p>
+            Using Angular to rebuild the myFlix application I had built using
+            react. This allowed me to explore a different framework in an
+            application I already knew a lot about.
+          </p>
+         
+        </div>
+      </div>
+      </div>
+      <!-- Contact ------------------------------------------------------ -->
+      <div class="contact__index" id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact__info">
+          <p>I am excited to start my journey working as a dedveloper, please reach out about anything.</p>
+          <p>Email:</p><br>
+        </div>
+        <div class="contact__social">
+          <a href="https://github.com/aclantz"
+            ><img src="./img/github-icon.svg" alt="Github"
+          /></a>
+          <a href="https://www.linkedin.com/in/alex-lantz-432182277/">
+            <img src="./img/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="https://x.com/LantzAlex" width="30px" height="auto"
+            ><img src="./img/x-icon.svg" alt="X, formally twitter"
+          /></a>
+          <a href="https://medium.com/@aclantz321" width="30px"
+            ><img src="./img/medium-icon.svg" alt="Medium"
+          /></a>
+        </div>
+      </div>
     </main>
     <footer class="page__footer">
-      <p>Find me on</p>
+      <!-- <p>Find me on</p>
       <div class="social-media">
-        <a href="https://github.com/aclantz"><img src="./img/github-icon.svg" alt="Github" /></a>
-        <a href="https://www.linkedin.com/in/alex-lantz-432182277/"> <img src="./img/linkedin-icon.svg" alt="Linkedin" /></a>
-      </div>
+        <a href="https://github.com/aclantz"
+          ><img src="./img/github-icon.svg" alt="Github"
+        /></a>
+        <a href="https://www.linkedin.com/in/alex-lantz-432182277/">
+          <img src="./img/linkedin-icon.svg" alt="Linkedin"
+        /></a>
+      </div> -->
+      <!-- <div class="secret">
+        <p>click here for a secret!</p>
+      </div> -->
     </footer>
     <script src="js/tota11y.min.js"></script>
   </body>
