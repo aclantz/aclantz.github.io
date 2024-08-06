@@ -182,13 +182,22 @@ h2 {
   align-self: flex-start;
   /* margin-top: -0.5px; */
 }
-
-.grid__item:hover {
+.grid__item h2 {
+  text-decoration: underline;
+}
+/* .icon-container {
+  display: flex;
+  justify-content: space-around;
+} */
+.work-icon {
+  margin-left: 8px;
+}
+/* .grid__item:hover {
   background-color: var(--bg-color);
 
   color: var(--black-color);
   border: 1px solid var(--black-color);
-}
+} */
 
 
 /* Contact Index ------------------------------------------------- */
