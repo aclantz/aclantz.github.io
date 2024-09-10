@@ -8,6 +8,7 @@
   --black-color: #131B23;
   --primary-font-weight: 400;
   --keeks-red: #a2533c;
+  --keeks-red2: #ca3d3d;
   --keeks-blue: #a3bbd5;
   --green: #49713d;
   --golden: #e8bc29;
@@ -25,11 +26,22 @@ a {
   text-decoration: none;
 }
 h1, h2, h3 {
-  color: var(--keeks-red);
+  color: var(--keeks-red2);
   font-family: "Merriweather", serif;
+  font-size: 2.25em;
   /* font-weight: bold; */
 }
-
+button {
+  background-color: var(--black-color);
+  color: var(--bg-color);
+  padding: 9px;
+  border: none;
+  box-shadow: 3px 3px 5px var(--keeks-blue);
+}
+button:hover {
+  background-color: var(--text-color-light);
+  box-shadow: 3px 3px 5px var(--keeks-blue);
+}
 
 /* Nav-------------------------------------------- */
 .page-header {
@@ -137,6 +149,9 @@ h1, h2, h3 {
 .main__social {
   margin-top: 20px;
 }
+.main__message h1 {
+  font-size: 3em;
+}
 
 /* About Index ----------------------------------------------- */
 .about__message {
@@ -202,6 +217,9 @@ h1, h2, h3 {
   font-weight: 400;
   font-size: .85em;
 }
+#resume {
+  margin-top: 25px;
+}
 
 /* Contact Index ------------------------------------------------- */
 .contact__social {
@@ -210,10 +228,22 @@ h1, h2, h3 {
 }
 .contact__info {
   width: 80%;
+  margin-bottom: 10px;
 }
-.contact__email {
+.contact__info--email {
+  display: flex;
+  justify-content: center;
+}
+.contact__info h4 {
+  color: var(--keeks-red2);
+  font-family: "Merriweather", serif;
+  display: inline-block;
+}
+.contact--email {
   font-size: 1.25em;
-  color: var(--green);
+  color: var(--black-color);
+  display: inline-block;
+  margin-left: 5px;
 }
 
 /* Case Study Index ---------------------------------------------- */
@@ -248,9 +278,11 @@ h1, h2, h3 {
 }
 .tools--title {
   color: var(--keeks-blue);
+  font-size: 1.5em;
 }
 h3 {
-  color: var(--keeks-red);
+  color: var(--keeks-red2);
+  font-size: 1.8em;
 }
 .link {
   text-decoration: underline;
