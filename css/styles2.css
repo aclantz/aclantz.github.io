@@ -7,12 +7,16 @@
   --text-color-light: #3f4045;
   --black-color: #131B23;
   --primary-font-weight: 400;
+  --keeks-red: #a2533c;
+  --keeks-blue: #a3bbd5;
+  --green: #49713d;
+  --golden: #e8bc29;
 }
 body{
   background-color: var(--bg-color);
   font-family: 'Montserrat', sans-serif;
   font-weight: var(--primary-font-weight);
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.1;
   color: var(--black-color);
 }
@@ -20,8 +24,10 @@ a {
   color: var(--text-color);
   text-decoration: none;
 }
-h2 {
-  font-weight: bold;
+h1, h2, h3 {
+  color: var(--keeks-red);
+  font-family: "Merriweather", serif;
+  /* font-weight: bold; */
 }
 
 
@@ -37,6 +43,7 @@ h2 {
 .page-header__item:first-child {
   width: 200px;
   height: 60px;
+  margin-left: 20px;
 }
 .page-header__item:last-child {
   flex-grow: 1;
@@ -47,12 +54,14 @@ h2 {
 }
 .nav--list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 20px;
   color: var(--text-color);
 }
 .nav--list__item {
   font-size: 16px;
+  font-family: "Merriweather", serif;
   transition: font-size 0.8s;
+  margin-left: 20px;
 }
 .nav--list__item:hover {
   font-size: 20px;
@@ -81,15 +90,15 @@ h2 {
   justify-content: center;
   /* margin-bottom: 20px; */
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #000;
 }
 .about__index {
   display: flex;
   flex-direction: column;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #000;
-  margin-bottom: 70px;
+  
 }
 .work__index {
   display: flex;
@@ -101,9 +110,9 @@ h2 {
 .contact__index {
   display: flex;
   flex-direction: column;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #000;
-  
+  margin-bottom: 50px;
 }
 .case__index {
   display: flex;
@@ -118,7 +127,7 @@ h2 {
 
 /* Main Index ------------------------------------------- */
 .profile__portrait {
-  width: 550px;
+  width: 1000px;
   height: auto;
   margin-right: 40px;
 }
@@ -131,36 +140,26 @@ h2 {
 
 /* About Index ----------------------------------------------- */
 .about__message {
-  width: 600px;
-  font-size: 1.1em;
+  width: 80%;
+  font-size: 1em;
 }
 .about__section{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 .about__images {
   display: flex;
-  /* justify-content: space-around; */
-  /* margin-top: 50px; */
-  /* flex: 1 1 1; */
-  /* flex-direction: row; */
+  justify-content: space-around;
+  margin-top: 50px;
+  flex: 1 1 1;
+  flex-direction: row;
 }
-.about__index img {
-  width: 300px;
+.about__img {
+  width: 30%;
   height: auto;
-}
-.about__bar {
-  width: 400px;
-  height: 20px;
-  border: 1px solid var(--black-color);
-  margin-bottom: 15px;
-}
-.about__bar--status {
-  color: var(--bg-color);
-  background-color: var(--black-color);
-  height: 18px;
-  font-size: 15px;
+  object-fit: cover;
 }
 
 /* Work Index --------------------------------------------------  */
@@ -172,38 +171,49 @@ h2 {
 }
 .grid__item {
   background-color: var(--black-color);
+  /* background-color: #49713d; */
   padding: 10px;
   text-align: Left;
   box-shadow: 3px 3px 5px var(--text-color);
   color: var(--bg-color);
-  transition: background-color 0.8s ease-in-out;
+  /* transition: background-color 0.8s ease-in-out; */
 }
 .work__index h1 {
   align-self: flex-start;
-  /* margin-top: -0.5px; */
 }
-.grid__item h2 {
+.card--header {
+  display: grid;
+  grid-template-columns: auto 100px;
+  align-items: center;
+  text-transform: uppercase;
+}
+.card--title {
   text-decoration: underline;
+  color: var(--bg-color);
 }
-/* .icon-container {
-  display: flex;
-  justify-content: space-around;
-} */
-.work-icon {
-  margin-left: 8px;
+.card--date {
+  color: var(--keeks-blue);
+    font-size: .85em;
+    font-weight: 600;
+    text-align: right;
 }
-/* .grid__item:hover {
-  background-color: var(--bg-color);
-
-  color: var(--black-color);
-  border: 1px solid var(--black-color);
-} */
-
+.card--highlight {
+  color: var(--golden);
+  font-weight: 400;
+  font-size: .85em;
+}
 
 /* Contact Index ------------------------------------------------- */
 .contact__social {
   display: flex;
   justify-content: space-evenly;
+}
+.contact__info {
+  width: 80%;
+}
+.contact__email {
+  font-size: 1.25em;
+  color: var(--green);
 }
 
 /* Case Study Index ---------------------------------------------- */
@@ -226,25 +236,21 @@ h2 {
 .opening ul{
   list-style-type: none;
 }
-/* .opening-goal {
-  position: relative;
-} */
 .hero-img {
   margin: 20px;
   margin-left: 30px;
   /* z-index: -1; */
 }
-/* .opening-goal-text {
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
-  margin-left: 30px;
-  background-color: var(--bg-color);
-} */
 .case__index img {
   width: 700px;
   height: auto;
   margin-left: 30px;
+}
+.tools--title {
+  color: var(--keeks-blue);
+}
+h3 {
+  color: var(--keeks-red);
 }
 .link {
   text-decoration: underline;

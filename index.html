@@ -12,6 +12,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles2.css" type="text/css" />
   </head>
   <body id="main">
@@ -50,13 +55,15 @@
       <!-- Main, landing --------------------------------------- -->
       <div class="main__index">
         <img
-          src="img/alex-acadia-profile.jpg"
+          src="img/ath_sitting_4.jpeg"
           class="profile__portrait"
           alt="Photo of me in Acadia national park." />
         <div class="main__message">
           <h1>Hello, World!</h1>
-          <p>My name is Alex Lantz and I'm learning to be a web developer!</p>
-          <!-- <a href="work.html" class="hover">Check out some of my work</a><br /> -->
+          <p>
+            My name is Alex Lantz and I'm a budding web developer focused on
+            details building beautiful products.
+          </p>
           <div class="main__social">
             <a href="https://github.com/aclantz"
               ><img src="./img/github-icon.svg" alt="Github"
@@ -67,9 +74,9 @@
             <a href="https://x.com/LantzAlex" width="30px" height="auto"
               ><img src="./img/x-icon.svg" alt="X, formally twitter"
             /></a>
-            <a href="https://medium.com/@aclantz321" width="30px"
+            <!-- <a href="https://medium.com/@aclantz321" width="30px"
               ><img src="./img/medium-icon.svg" alt="Medium"
-            /></a>
+            /></a> -->
           </div>
         </div>
       </div>
@@ -77,145 +84,121 @@
       <div class="work__index" id="work">
         <h1>My Work</h1>
         <div class="grid work__cards">
-          <!-- <a href="./case-study/to-do-list-case-study.html">
+          <a href="./case-study/myFlix-angular-case-study.html">
             <div class="grid__item">
-              <h2>To Do List App</h2>
+              <header class="card--header">
+                <h4 class="card--title">React App, Angular</h4>
+                <span class="card--date">June '24</span>
+              </header>
               <p>
-                Created using JavaScript and jQuery this App allows users to
-                easily create, organize, and manage a list of tasks.
+                Using Angular to rebuild the myFlix application I had previously
+                built using React. Taking an application I know so well and
+                changing the tool allowed me to build something familiar while learning Angular.
               </p>
-            </div>
-          </a> -->
-
-          <a href="./case-study/pokedex-case-study.html">
-            <div class="grid__item">
-              <h2>PokeDex App</h2>
-              <!-- <p>
-                JavaScript built application allowing users to explore data
-                about the original 150 pokemon.
-              </p> -->
-              <div class="icon-container">
-                <img
-                  src="./img/icon-html.png"
-                  alt="html icon"
-                  class="work-icon" />
-                <img
-                  src="./img/icon-css.png"
-                  alt="css icon"
-                  class="work-icon" />
-                <img
-                  src="./img/icon-js.png"
-                  alt="javascript icon"
-                  class="work-icon" />
-                <img
-                  src="./img/icon-bootstrap.png"
-                  alt="bootstrap icon"
-                  class="work-icon" />
-              </div>
-            </div>
-          </a>
-
-          <a href="./case-study/myflix-api-case-study.html">
-            <div class="grid__item">
-              <h2>myFlix API</h2>
-              <!-- <p>
-                  Backend component consisting of database, business logic, and REST API 
-                </p> -->
-                <div class="icon-container">
-                  <img
-                    src="./img/icon-js.png"
-                    alt="javascript icon"
-                    class="work-icon" />
-                  <img
-                    src="./img/icon-node.png"
-                    alt="node icon"
-                    class="work-icon" />
-                  <img
-                    src="./img/icon-express.png"
-                    alt="express icon"
-                    class="work-icon" />
-                  <img
-                    src="./img/icon-mongodb.png"
-                    alt="mongoDB icon"
-                    class="work-icon" />
-                </div>
-            </div>
-          </a>
-
-          <a href="./case-study/myFlix-react-case-study.html">
-            <div class="grid__item">
-              <h2>myFlix App, React</h2>
-
-              <!-- <p>
-                A full back to front React movie application that allows users
-                to create profiles and explore a database of movies.
-              </p> -->
-              
-            </div>
-          </a>
-
-          <a href="./case-study/meet-case-study.html">
-            <div class="grid__item">
-              <h2>Meet App</h2>
-
-              <!-- <p>
-                A React application giving users information about events in
-                certain cities. With a backend built using AWS.
-              </p> -->
+              <span class="card--highlight">#Angular </span>
+              <span class="card--highlight">#TypeScript </span>
+              <span class="card--highlight">#Node.js </span>
+              <span class="card--highlight">#TypeDoc </span>
+              <span class="card--highlight">#AngularMaterial </span>
             </div>
           </a>
 
           <a href="./case-study/chat-case-study.html">
             <div class="grid__item">
-              <h2>Chat App</h2>
-              <!-- <p>
+              <header class="card--header">
+                <h4 class="card--title">Chat App</h4>
+                <span class="card--date">May '24</span>
+              </header>
+              <p>
                 Working with React Native and Gifted Chat I built a chat app
                 that allows users to communicate, see old messages, send
-                pictures, and share their location.
-              </p> -->
+                pictures, and share their location. Using Google Firebase as a
+                backend for chat functionality.
+              </p>
+              <span class="card--highlight">#JavaScript </span>
+              <span class="card--highlight">#ReactNative </span>
+              <span class="card--highlight">#Google-Firestore </span>
+              <span class="card--highlight">#Google-Firebase </span>
             </div>
           </a>
 
-          <a href="./case-study/myFlix-angular-case-study.html">
+          <a href="./case-study/meet-case-study.html">
             <div class="grid__item">
-              <h2>myFlix App, Angular</h2>
-
-              <!-- <p>
-                Using Angular to rebuild the myFlix application I had built
-                using react.
-              </p> -->
+              <header class="card--header">
+                <h4 class="card--title">Meet App</h4>
+                <span class="card--date">March '24</span>
+              </header>
+              <p>
+                A React application giving users information about events in
+                certain cities. With a backend built using AWS. Focused on
+                creating cloud functions and using data visualizations to create
+                a fully structured React application all in a
+                Test-Driven-DEvelopment process.
+              </p>
+              <span class="card--highlight">#JavaScript </span>
+              <span class="card--highlight">#React </span>
+              <span class="card--highlight">#AWS-Lambda </span>
+              <span class="card--highlight">#OAuth2 </span>
             </div>
           </a>
-        </div>
-      </div>
-      <!-- Contact ------------------------------------------------------ -->
-      <div class="contact__index" id="contact">
-        <h1>Contact Me</h1>
-        <div class="contact__info">
-          <p>
-            Let's connect! Please reach out if you're interested in learning
-            more about me. Feel free to send me an email or shoot me a message
-            on social media.
-          </p>
-          <p>
-            Email:
-            <a href="mailto:alexcalnzt@gmail.com">alexclantz@gmail.com</a>
-          </p>
-          <br />
-        </div>
-        <div class="contact__social">
-          <a href="https://github.com/aclantz"
-            ><img src="./img/github-icon.svg" alt="Github"
-          /></a>
-          <a href="https://www.linkedin.com/in/alex-lantz-432182277/">
-            <img src="./img/linkedin-icon.svg" alt="Linkedin"
-          /></a>
-          <a href="https://x.com/LantzAlex" width="30px" height="auto"
-            ><img src="./img/x-icon.svg" alt="X, formally twitter"
-          /></a>
-          <a href="https://medium.com/@aclantz321" width="30px"
-            ><img src="./img/medium-icon.svg" alt="Medium"
-          /></a>
+
+          <a href="./case-study/myFlix-react-case-study.html">
+            <div class="grid__item">
+              <header class="card--header">
+                <h4 class="card--title">myflix app, React</h4>
+                <span class="card--date">January '24</span>
+              </header>
+              <p>
+                A full back to front movie application that allows users to
+                create profiles and explore a database of movies. Connected to
+                my MYFLIX API that I built previously and using React to build the front end of the application.
+              </p>
+              <span class="card--highlight">#JavaScript </span>
+              <span class="card--highlight">#React </span>
+              <span class="card--highlight">#Parcel </span>
+              <span class="card--highlight">#Bootstrap </span>
+              <span class="card--highlight">#SPA </span>
+            </div>
+          </a>
+
+          <a href="./case-study/myflix-api-case-study.html">
+            <div class="grid__item">
+              <header class="card--header">
+                <h4 class="card--title">myflix API</h4>
+                <span class="card--date">November '23</span>
+              </header>
+              <p>
+                Backend API consisting of a database, business logic, and
+                rESTful API. Focused on creating a backend framework and movie
+                database for two of my future applications to connect to.
+              </p>
+              <span class="card--highlight">#Javascript </span>
+              <span class="card--highlight">#Node.js </span>
+              <span class="card--highlight">#Express </span>
+              <span class="card--highlight">#MongoDB </span>
+              <span class="card--highlight">#Mongoose </span>
+            </div>
+          </a>
+
+          <a href="./case-study/pokedex-case-study.html">
+            <div class="grid__item">
+              <header class="card--header">
+                <h4 class="card--title">PokeDex App</h4>
+                <span class="card--date">October '23</span>
+              </header>
+              <p>
+                JavaScript built application allowing users to explore data
+                about the original 150 pokemon. I explored using jQuery and
+                built modals to show the different details pertaining to each
+                pokemon loaded from an external aip.
+              </p>
+              <span class="card--highlight">#HTML </span>
+              <span class="card--highlight">#CSS </span>
+              <span class="card--highlight">#JavaScript </span>
+              <span class="card--highlight">#jQuery </span>
+              <span class="card--highlight">#Bootstrap </span>
+            </div>
+          </a>
         </div>
       </div>
       <!-- About ------------------------------------------------------ -->
@@ -224,17 +207,20 @@
         <div class="about__section">
           <div class="about__message">
             <p>
-              I am a retired professional dancer turned web developer living in
-              Rhode Island with my husband Kevin. We love RI, adventuring to
-              national parks, and playing board games.<br />
-              After a 15 year long dance career, I found that focusing on the
-              nitty gritty details that create beautiful aesthetics is what I
-              enjoy most. I am excited to keep creating in a virtual format and
-              to apply my dedication and drive to your project!
+              I’m a web developer with a prior 15-year career working as a
+              professional ballet dancer. The competitive world of ballet
+              ingrains patience, focus, and attention to detail. So many years
+              in that career allowed me to not only grow as an artist, but to
+              understand how to work with different people in an intimate
+              setting. Solving problems and creating with colleagues is what
+              brought me to web development, as I enjoy working with people on
+              small details to help build something together. Learning through
+              Career Foundry’s web development boot camp has broadened my skills
+              and allowed me to continue creating in a virtual space.
             </p>
-            <h3>My experience:</h3>
-            <div class="about__stats">
-              <div class="about__bar">
+            <!-- <h3>My experience:</h3>
+            <div class="about__stats"> -->
+            <!-- <div class="about__bar">
                 <div class="about__bar--status" style="width: 98%">
                   HTML/CSS
                 </div>
@@ -254,11 +240,54 @@
               <div class="about__bar">
                 <div class="about__bar--status" style="width: 45%">Angular</div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="about__images">
-            <img src="./img/dance-tara.jpeg" alt="a picture of me dancing" />
-          </div>
+        </div>
+        <div class="about__images">
+          <img
+            src="./img/dance-tara.jpeg"
+            alt="a picture of me dancing"
+            class="about__img" />
+          <img
+            src="./img/in_pvd.jpeg"
+            alt="me walking in providence rhode island."
+            class="about__img" />
+          <img
+            src="./img/post_wedding.jpg"
+            alt="me with my husband kevin"
+            class="about__img" />
+        </div>
+      </div>
+      <!-- Contact ------------------------------------------------------ -->
+      <div class="contact__index" id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact__info">
+          <p>
+            Let's connect! Please reach out if you're interested in learning
+            more about me. Feel free to send me an email or shoot me a message
+            on social media.
+          </p>
+          <p>
+            Email:
+            <a href="mailto:alexcalnzt@gmail.com" class="contact__email"
+              >alexclantz@gmail.com</a
+            >
+          </p>
+          <br />
+        </div>
+        <div class="contact__social">
+          <a href="https://github.com/aclantz"
+            ><img src="./img/github-icon.svg" alt="Github"
+          /></a>
+          <a href="https://www.linkedin.com/in/alex-lantz-432182277/">
+            <img src="./img/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="https://x.com/LantzAlex" width="30px" height="auto"
+            ><img src="./img/x-icon.svg" alt="X, formally twitter"
+          /></a>
+          <!-- <a href="https://medium.com/@aclantz321" width="30px"
+            ><img src="./img/medium-icon.svg" alt="Medium"
+          /></a> -->
         </div>
       </div>
     </main>
@@ -266,3 +295,22 @@
     <script src="js/tota11y.min.js"></script>
   </body>
 </html>
+
+<!-- <div class="icon-container">
+                <img
+                  src="./img/icon-html.png"
+                  alt="html icon"
+                  class="work-icon" />
+                <img
+                  src="./img/icon-css.png"
+                  alt="css icon"
+                  class="work-icon" />
+                <img
+                  src="./img/icon-js.png"
+                  alt="javascript icon"
+                  class="work-icon" />
+                <img
+                  src="./img/icon-bootstrap.png"
+                  alt="bootstrap icon"
+                  class="work-icon" />
+              </div> -->
