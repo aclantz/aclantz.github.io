@@ -142,6 +142,7 @@ button:hover {
   width: 1000px;
   height: auto;
   margin-right: 40px;
+  object-fit: cover;
 }
 .main__message {
   width: 200px;
@@ -299,6 +300,13 @@ h3 {
   .about__section {
     flex-direction: column;
   }
+  .main__index {
+    flex-direction: column;
+  }
+  .profile__portrait {
+    width: 90%;
+    height: auto;
+  }
   }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
@@ -309,6 +317,13 @@ h3 {
   }
   .about__section {
     flex-direction: column;
+  }
+  .main__index {
+    flex-direction: column;
+  }
+  .profile__portrait {
+    width: 90%;
+    height: auto;
   }
 }
 @media all and (max-width: 750px) {

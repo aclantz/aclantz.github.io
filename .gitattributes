@@ -1,5 +1,2 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
-# modules used for dev, not needed for hosting
-node_modules
