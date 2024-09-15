@@ -38,8 +38,12 @@
     <main class="container">
       <div class="case__index">
         <h1>myFlix App, Angular</h1>
-        <a href="https://github.com/aclantz/myFlix-Angular-Client">Github</a>
-        <a href="https://aclantz.github.io/myFlix-Angular-Client/welcome"
+        <a href="https://github.com/aclantz/myFlix-Angular-Client" class="link"
+          >Github</a
+        >
+        <a
+          href="https://aclantz.github.io/myFlix-Angular-Client/welcome"
+          class="link"
           >Link</a
         >
         <div class="opening">
@@ -50,7 +54,7 @@
               connecting to the movie API that I built previously.
             </p>
             <img
-              src="../img/angular-myflix-app.png"
+              src="../img/case-study/myflix-angular-app-brdr.png"
               alt="screen shot of Angular app"
               class="hero-img" />
           </div>
@@ -61,8 +65,8 @@
               <p>Career Foundry, Full-Stack Immersion, Achievement 6</p>
               <p>
                 To build my first Angular application, and give myself
-                experience using TypeScript, data bindings, and interpolation while I build an
-                application I am already familiar with
+                experience using TypeScript, data bindings, and interpolation
+                while I build an application I am already familiar with
               </p>
             </div>
 
@@ -87,42 +91,52 @@
           different framework, especially in how you pass information between
           components. I found data bindings to be confusing at the start but
           once I got the hang of it, I enjoyed the ease with which I could move
-          data through an application.
+          data through an application. I also appreciated the structure used to
+          organize files, I am the kind of person who loves when something has a
+          specific home or place, Angular format suits this and it feels very
+          easy to find any piece of code that you may be looking for.
         </p>
+        <img
+          src="../img/case-study/angular-ss.png"
+          alt="screenshot of typescript code" />
         <p>
           Again, I learned the lesson of high quality documentation being so
-          important after having to return to my own API. Clear documentation is
-          such an integral part of development.
+          important after having to return to my own API. I also used TypeDoc to
+          format my documentation for this application, implementing clear and
+          organized comments so that typeDoc could function.
         </p>
-        <figure>
-          <figcaption>Key features</figcaption>
-          <ul>
-            <li>
-              Your app should display a welcome view where users will be able to
-              either log in or register an account.
-            </li>
-            <li>Once authenticated, the user should now view all movies.</li>
-            <li>
-              Upon clicking on a particular movie, users will be taken to a
-              single movie view, where additional movie details will be
-              displayed. The single movie view will contain the following
-              additional features:
-              <ul>
-                <li>
-                  A button that when clicked takes a user to the director view,
-                  where details about the director of that particular movie will
-                  be displayed.
-                </li>
-                <li>
-                  A button that when clicked takes a user to the genre view,
-                  where details about that particular genre of the movie will be
-                  displayed.
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </figure>
+        <h3>The Outcome:</h3>
+        <p>
+          Initially having to push through the adjustment of switching
+          frameworks from React to Angular was the main hurdle in building this
+          application. Once I found the rhythm of working with Angular
+          everything felt smooth. I would love to come back to this application
+          and add more styling and maybe a "movie details" page where you can
+          explore movie data not through modals.
+        </p>
       </div>
     </main>
+    <footer class="page__footer">
+      <ul class="site-map">
+        <li class="site-mapp__title">Site Map</li>
+        <li><a href="../index.html">Home</a></li>
+        <!-- <li><a href="#work">My Work</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+      </ul>
+      <a href="../index.html"><img
+        src="../img/alex-logo.3.jpeg"
+        alt="Alex's personal logo"
+        class="page__footer--icon" /></a>
+          <ul class="site-map">
+            <li class="site-mapp__title">Case Studies</li>
+            <li><a href="./myFlix-angular-case-study.html">myFlix, Angular</a></li>
+            <li><a href="./myFlix-react-case-study.html">myFlix, React</a></li>
+            <li><a href="./myflix-api-case-study.html">myFlix API</a></li>
+            <li><a href="./chat-case-study.html">Chat App</a></li>
+            <li><a href="./meet-case-study.html">Meet App</a></li>
+            <li><a href="./pokedex-case-study.html">Pokedex App</a></li>
+          </ul>
+    </footer>
   </body>
 </html>

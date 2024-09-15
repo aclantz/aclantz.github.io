@@ -16,10 +16,12 @@
   </head>
   <body id="case-study">
     <header class="page-header">
-      <a href="../index.html"><img
-        src="../img/alex-logo.3.jpeg"
-        alt="Alex's personal logo"
-        class="page-header__item" /></a>
+      <a href="../index.html"
+        ><img
+          src="../img/alex-logo.3.jpeg"
+          alt="Alex's personal logo"
+          class="page-header__item"
+      /></a>
       <nav class="page-header__item">
         <ul role="menubar" class="nav--list border-anima">
           <li role="presentation">
@@ -35,50 +37,111 @@
     </header>
     <main class="container">
       <div class="case__index">
-        <h1>myFlix App, React</h1>
-        <a href="https://github.com/aclantz/myFlix-client">Github/frontEnd</a>
-        <a href="https://github.com/aclantz/movie-api-project"
-          >Github/backEnd</a
+        <h1>MyFlix App, React</h1>
+        <a href="https://github.com/aclantz/myFlix-client" class="link"
+          >Github link</a
         >
-        <a href="https://myflixacl.netlify.app/">Link</a>
+        <a href="https://myflixacl.netlify.app/" class="link">App link</a>
+        <div class="opening">
+          <div class="opening-goal">
+            <h3>The Goal:</h3>
+            <p>
+              To build a full front to back application that allows users to
+              create a profile, view a database of movies, and save some as
+              favorites. Once connected to my backend API this will be a
+              complete MERN stack application.
+            </p>
+            <img
+              src="../img/case-study/myflix-app.png"
+              alt="screen shot of javascript code"
+              class="hero-img" />
+          </div>
+
+          <div class="opening-section">
+            <div class="opening-purpose">
+              <h3>The Purpose:</h3>
+              <p>Career Foundry, Full-Stack Immersion, Achievement 3</p>
+              <p>
+                To connect to the movies API I had already built in a previous
+                achievement and build a front end architecture using React. This
+                was my first opportunity exploring React and learning the basics
+                of how it functions.
+              </p>
+            </div>
+
+            <div class="opening-tools">
+              <h3 class="tools--title">The Tools:</h3>
+              <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Parcel</li>
+                <li>Bootstrap</li>
+                <li>propTypes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3>The Process:</h3>
         <p>
-          This is the first full front- and back-end application I ever built,
-          using Node, Express, MongoDB, and React.
+          This was my first time working through using React as a framework so I
+          was learning the fundamentals at the beginning. Once I got in the
+          swing of things and started to understand what "States" and "props"
+          really meant and how to use them I really started to enjoy how React
+          works. I love structure so to have a specified structure to work
+          within felt great.
         </p>
         <img
-          src="../img/myflix-app.png"
-          alt="screen shot of the myFlix application" />
-        <h2>Back-End</h2>
+          src="../img/case-study/myFlix-app2.png"
+          alt="screen shot of a movie's details page" />
         <p>
-          Building a server-side application using Node, Express, and MongoDB. I
-          learned about the infrastructure of back-end applications (e.g., Server
-          -> Business Logic -> Data Base). Building my own Database of movies
-          and making sure to organize my data accurately and consistently. We
-          were directed to work with a nonSQL database and to build our data
-          using AI to help create the mock data.
+          My first challenge was building a search function allowing users to
+          search for movies within the database and then go to that movies
+          specified details page. It took me a while to figure out how to access
+          the database in a search and then if successful send the user to the
+          details page. This was the moment when the idea of passing props
+          through child components clicked, I knew I didn’t want to fully search
+          my database for match and since I had already retrieved all my movie
+          data in my MainView component, I passed movies to the Search
+          component and was then able to search for a match in there. It feels
+          silly and obvious writing it now but I can see how this was the
+          moment when I fell in love with React.
         </p>
+        <img
+          src="../img/case-study/myFlix-app3.png"
+          alt="screen shot of my MongoDB movie collection" />
+        <h3>The Outcome:</h3>
         <p>
-          We then created the business logic and server functions. Creating
-          endpoints for HTTP requests and learning about READ, PUT, POST, DELETE
-          requests.
+          I am proud of my first full back to front application. I could feel
+          myself not just learning the skills to build with React but also
+          starting to actually understand programming and how that can translate
+          into any framework. I would love to revisit this application and
+          improve upon the “favorite-ing” structure and add a visible element
+          for the user to see if the movie is already favorited or not.
         </p>
-        <img src="../img/myFlix-app3.png" alt="screen shot of mongo DB movie collection" />
-        <h2>Front-End</h2>
-        <p>
-          This was my first time working with React. Once I got over the
-          learning curve, I fell in love with react. I enjoy the passing of data
-          and using states to store information. I had a vision right away for
-          how I wanted this application to look and was very excited to build it
-          into what I was looking for.
-        </p>
-        <p>
-          I learned the value of clear documentation now that I needed to
-          interact with my own API. Many lessons were learned as I initially
-          struggled to connect to the endpoints that I built. I ended up going
-          back and redefining my documentation to make it more clear.
-        </p>
-        <img src="../img/myFlix-app2.png" alt="screen shot of singular movie page">
       </div>
     </main>
+    <footer class="page__footer">
+      <ul class="site-map">
+        <li class="site-mapp__title">Site Map</li>
+        <li><a href="../index.html">Home</a></li>
+        <!-- <li><a href="#work">My Work</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+      </ul>
+      <a href="../index.html"><img
+        src="../img/alex-logo.3.jpeg"
+        alt="Alex's personal logo"
+        class="page__footer--icon" /></a>
+          <ul class="site-map">
+            <li class="site-mapp__title">Case Studies</li>
+            <li><a href="./myFlix-angular-case-study.html">myFlix, Angular</a></li>
+            <li><a href="./myFlix-react-case-study.html">myFlix, React</a></li>
+            <li><a href="./myflix-api-case-study.html">myFlix API</a></li>
+            <li><a href="./chat-case-study.html">Chat App</a></li>
+            <li><a href="./meet-case-study.html">Meet App</a></li>
+            <li><a href="./pokedex-case-study.html">Pokedex App</a></li>
+          </ul>
+    </footer>
   </body>
 </html>

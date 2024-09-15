@@ -16,10 +16,12 @@
   </head>
   <body id="case-study">
     <header class="page-header">
-      <a href="../index.html"><img
-        src="../img/alex-logo.3.jpeg"
-        alt="Alex's personal logo"
-        class="page-header__item" /></a>
+      <a href="../index.html"
+        ><img
+          src="../img/alex-logo.3.jpeg"
+          alt="Alex's personal logo"
+          class="page-header__item"
+      /></a>
       <nav class="page-header__item">
         <ul role="menubar" class="nav--list border-anima">
           <li role="presentation">
@@ -36,38 +38,106 @@
     <main class="container">
       <div class="case__index">
         <h1>Meet App</h1>
-        <a href="https://github.com/aclantz/meet2">Github</a>
-        <a href="https://aclantz.github.io/meet2/">Link</a>
-        <p>
-          A React application giving users information about events in certain
-          cities. Allows users to search for cities and displays visual data
-          about what events are available and specifics about each event.
-        </p>
+        <a href="https://github.com/aclantz/meet2" class="link">Github link</a>
+        <a href="https://aclantz.github.io/meet2/" class="link">App link</a>
+        <div class="opening">
+          <div class="opening-goal">
+            <h3>The Goal:</h3>
+            <p>
+              A React application giving users information about events in
+              certain cities. Allows users to search for cities and displays
+              visual data about what events are available and specifics about
+              each event.
+            </p>
+            <img
+              src="../img/case-study/meet-app1-brdr.png"
+              alt="screen shot of my Meet App"
+              class="hero-img" />
+          </div>
 
+          <div class="opening-section">
+            <div class="opening-purpose">
+              <h3>The Purpose:</h3>
+              <p>Career Foundry, Full-Stack Immersion, Achievement 4</p>
+              <p>
+                To build a test driven development app that relies on AWS-Lambda
+                cloud functions and data visualization to inform the user about
+                different events in a chosen city.
+              </p>
+            </div>
+
+            <div class="opening-tools">
+              <h3 class="tools--title">The Tools:</h3>
+              <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>AWS-Lambda</li>
+                <li>OAuth2</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3>The Process:</h3>
+        <p>
+          I built this application using a Test Driven Development principles.
+          So it started with slowly creating my three main functions (
+          getAuthURL(), getAccessToken(), and getCalendarEvents() ). Once these
+          functions were built my next step was to host them on a cloud server,
+          I used AWS and then had to organize my auth-server to hold my base
+          functions and then push them to the server as needed.
+        </p>
         <img
-          src="../img/meet-app.png"
-          alt="screen shot of the myFlix application" />
+          src="../img/case-study/meet-app2.png"
+          alt="screen shot of my test code" />
         <p>
-          I used a full Test Driven Development process to build this
-          application. Learning to create functions in this format really allows
-          you to see what testing can do for a complicated application, and how
-          it makes it much easier to maintain clean code.
+          This was my biggest challenge in this application, somewhere in the
+          process of sending my functions across to the AWS server I must of
+          made a mistake and something threw off the server. Finding this error
+          was the new challenge, I could not find it. I ended up reaching out to
+          a developer friend who helped me through the AWS logs and we reset the
+          server and re-sent all of the functions.
         </p>
+        <img
+          src="../img/case-study/meet-app3-brdr.png"
+          alt="screen shot of event details button" />
         <p>
-          The back end of this application was built using serverless functions
-          (AWS). I learned the format for implementing and deploying serverless
-          functions and the testing needed to implement them in a TDD
-          application.
+          After that it felt like smooth sailing, building again with React felt
+          great and I was feeling even more at home with the framework. I was
+          proud of a lot of my design choices, especially the “show details”
+          button on each event card.
         </p>
-        <img src="../img/meet-app2.png" alt="image of code tests" />
+        <h3>The Outcome:</h3>
         <p>
-          I am very proud of the layout and look of this application. I think
-          the choice to have the "Show Details/Hide Details" button on the
-          bottom/as part of the border of the Event Card helped it to look more
-          professional and clean.
+          I learned the value of reaching out and working with other developers
+          to help find solutions and through that process learned more about
+          using AWS. I would be curious to build more serverless functions for
+          another application and see if I could build something a little more
+          complicated.
         </p>
-        <img src="../img/meet-app3.png" alt="image of Event cards">
       </div>
     </main>
+    <footer class="page__footer">
+      <ul class="site-map">
+        <li class="site-mapp__title">Site Map</li>
+        <li><a href="../index.html">Home</a></li>
+        <!-- <li><a href="#work">My Work</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+      </ul>
+      <a href="../index.html"><img
+        src="../img/alex-logo.3.jpeg"
+        alt="Alex's personal logo"
+        class="page__footer--icon" /></a>
+          <ul class="site-map">
+            <li class="site-mapp__title">Case Studies</li>
+            <li><a href="./myFlix-angular-case-study.html">myFlix, Angular</a></li>
+            <li><a href="./myFlix-react-case-study.html">myFlix, React</a></li>
+            <li><a href="./myflix-api-case-study.html">myFlix API</a></li>
+            <li><a href="./chat-case-study.html">Chat App</a></li>
+            <li><a href="./meet-case-study.html">Meet App</a></li>
+            <li><a href="./pokedex-case-study.html">Pokedex App</a></li>
+          </ul>
+    </footer>
   </body>
 </html>
