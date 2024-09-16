@@ -391,12 +391,20 @@ h3 {
     flex-direction: column;
   }
   .main__index {
+    margin-top: -90px;
     flex-direction: column;
     align-items: center;
+  }
+  .main__message{
+    text-align: center;
   }
   .profile__portrait {
     width: 90%;
     height: auto;
+    margin-left: 2rem;
+  }
+  .resume__index, .about__index, .contact__index {
+    border-bottom: none;
   }
   .case__index {
     margin-left: 3px;
@@ -412,6 +420,10 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
+  .page__footer--icon {
+    width: 125px;
+    height: auto;
+  }
   }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
@@ -426,6 +438,9 @@ h3 {
   .main__index {
     flex-direction: column;
     align-items: center;
+  }
+  .main__message{
+    text-align: center;
   }
   .profile__portrait {
     width: 90%;
