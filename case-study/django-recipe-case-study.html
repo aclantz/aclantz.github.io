@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django Recipe Case Study</title>
+    <link rel="shortcut icon" href="../img/favicon.comp.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles2.css" type="text/css" />
+  </head>
+  <body id="case-study">
+    <header class="page-header">
+      <a href="../index.html"
+        ><img
+          src="../img/alex-logo-light.png"
+          alt="Alex's personal logo"
+          class="page-header__item"
+      /></a>
+      <nav class="page-header__item">
+        <ul role="menubar" class="nav--list border-anima">
+          <li role="presentation">
+            <a
+              href="../index.html"
+              role="menuitem"
+              class="nav--list__item nav--list__item--active"
+              >Home</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="case__index">
+        <h1>Recipe App</h1>
+        <a href="https://github.com/aclantz/recipe-django-app" class="link">Github link</a>
+        <a href="https://aclantz.pythonanywhere.com/" class="link">App link</a>
+        <div class="opening">
+          <div class="opening-goal">
+            <h3>The Goal:</h3>
+            <p>
+              Build a full-stack web application with Django framework to manage
+              recipes. Providing user friendly interface where users can sig up,
+              log in, create, modify, and search for recipes.
+            </p>
+            <img
+              src="../img/case-study/recipe-app3.png"
+              alt="screen shot of my Meet App"
+              class="hero-img" />
+          </div>
+
+          <div class="opening-section">
+            <div class="opening-purpose">
+              <h3>The Purpose:</h3>
+              <p>Career Foundry, Python for Web-Dev, Achievement 2</p>
+              <p>
+                To develop a full-stack application focusing on Django for the
+                backend and python, html, css for the front end. Challenging me
+                to build a multi-user application applying coding best
+                practices.
+              </p>
+            </div>
+
+            <div class="opening-tools">
+              <h3 class="tools--title">The Tools:</h3>
+              <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>SQLite</li>
+                <li>HTML/CSS</li>
+                <li>Pandas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3>The Process:</h3>
+        <p>
+          I started this process by building a purely python command line
+          application that allowed you to create, delete, edit, and update
+          recipes. This was how I first learned how to use Python and and
+          exploring the difference in syntax between javascript and python I
+          found python to be very accessible. After creating this it was time to
+          update the application so that it would be a full-stack web app. I
+          used Django to manage the process, taking advantage of its built in
+          sql database, middleware, and query formatting.
+        </p>
+        <img
+          src="../img/case-study/recipe-cli1.png"
+          alt="screen shot of my test code" />
+        <p>
+          Figuring out the “Django way” of doing things was a definite
+          transition. I struggled with visualizing in my head how everything was
+          being connected. Comparing it to React and Angular made it feel much
+          more complicated, and with the other two I was always able to keep a
+          mental image of the file organization, Once I let this go and trusted
+          the process a bit more I grew more comfortable with organizational
+          method of Django.
+        </p>
+        <img
+          src="../img/case-study/recipe-app1.png"
+          alt="screen shot of event details button" />
+        <p>
+          One of my struggles was to build a search function that returned a
+          Pandas dataFrame, I understood the use of the data frame and how to
+          query the correct recipe data, but I wanted to have a list of all
+          recipes and their ingredients displayed before any search was made.
+          This required me to query all the recipes in its own variable
+          “recipes” and then when a search was made (POST request) I would
+          define another variable with the search query parameters “qs” and
+          display those. In my template I then used a conditional format to call
+          “qs” if available and “recipes” if not. The logic of this programming
+          was clear to me it then took me a while to practice and comfortably
+          intact it with python/django syntax.
+        </p>
+        <h3>The Outcome:</h3>
+        <p>
+          A full-stack Recipe application! I am proud of the aesthetics of the
+          app and functionality. I think what I gained most from the experience
+          was experience using Django and also practicing the skill of using
+          programming principals and applying them to the language and framework
+          I am currently working in. I find the more I shift through different
+          languages and frameworks the more I feel the core programming
+          principals sink in.
+        </p>
+      </div>
+    </main>
+    <footer class="page__footer">
+      <ul class="site-map">
+        <li class="site-mapp__title">Site Map</li>
+        <li><a href="../index.html">Home</a></li>
+        <!-- <li><a href="#work">My Work</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+      </ul>
+      <a href="../index.html"
+        ><img
+          src="../img/alex-logo-dark.png"
+          alt="Alex's personal logo"
+          class="page__footer--icon"
+      /></a>
+      <ul class="site-map">
+        <li class="site-mapp__title">Case Studies</li>
+        <li><a href="./django-recipe-case-study.html">Recipe App</a></li>
+        <li><a href="./myFlix-angular-case-study.html">myFlix, Angular</a></li>
+        <li><a href="./myFlix-react-case-study.html">myFlix, React</a></li>
+        <li><a href="./myflix-api-case-study.html">myFlix API</a></li>
+        <li><a href="./chat-case-study.html">Chat App</a></li>
+        <li><a href="./meet-case-study.html">Meet App</a></li>
+        <li><a href="./pokedex-case-study.html">Pokedex App</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
