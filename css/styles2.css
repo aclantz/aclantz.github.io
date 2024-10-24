@@ -378,6 +378,13 @@ h3 {
 .link {
   text-decoration: underline;
 }
+.app-info {
+  font-family: "Merriweather", serif;
+  color: var(--keeks-red2)
+}
+.app-info-cred {
+  color: var(--black-color)
+}
 
 
 @media all and (max-width: 500px) {
